@@ -12,69 +12,56 @@
 
 
 body, html {
-    margin: 0;
+    margin: 3em;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 300;
-    color: #707070;
+    color: #000000;
     line-height: 1.6;
- 
 }
 
-.component-wrap {
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
+.portfolio {
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(365px, 1fr));
+    grid-gap: 1em;
+    padding: 1em;
 
 }
 
-.card-component-img img {
-    width: 100%;
+.portfolio-card {
+    margin: 1em;
+}
+
+img {
+    max-width: 100%;
     height: auto;
     display: block;
 }
 
-.component-card {
-    display: grid;
-    grid-column: 1fr;
-    grid-row: auto;
-    grid-template-areas: 
-        "image"
-        "title"
-        "description"
-        "fontawesome"
-        "reponsibilities"}
-}
-
 .card-title {
-    grid-area: title;
-    font-size: 2rem;
-}
-
-.card-component-img{
-    grid-area: image;
+    font-size: 1.5rem;
 }
 
 .card-text-description {
-    grid-area: description;
+    font-size: 1rem;
 }
 
 .font-awesome {
-    grid-area: fontawesome;
     display: inline-block;
-}
-
-.card-list-responsibilities {
-    grid-area: reponsibilities;
 }
 
 span {
     text-transform: uppercase;
+    font-weight: 700;
+
 }
 
 .fa-sketch, .fa-github-square {
     font-size: 2rem;
+}
+
+ul {
+    list-style-position: inside; 
 }
 
 </style>
@@ -83,49 +70,233 @@ span {
 </head>
 
 <body>
+        <div class="portfolio">
        
-        <section class="component-card"><!--living the simple life-->
+        <div class="portfolio-card"><!--living the simple life-->
             <img src="http://michaelrinella.com/wp-content/uploads/2019/09/portfolioImagesLayout_simple-life-blog-min.png" class="card-component-img">
-            <h2 class="card-title"><a href="http://michaelrinella.com/simple-life/index.html" target="_blank">Living the Simple Life Blog</a></h2>
+            <h2 class="card-title">Living the Simple Life Blog</h2>
                 <p class="card-text-description">The Living the Simple Life Blog is a website that explores minimalism in life. The screenshots of the desktop 
                 view and mobile view detail the page layout and the design. I implemented the conversion of the design layouts into a responsive HTML/CSS 
                 prototype.</p>
                 <ul class="card-list-responsibilities">
                 <span class="card-text-uppercase">My Responsibilities:</span><br />
                 <li>UI Design-Development</li>
+                </ul>
+                <ul>
                 <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
                 <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
                 </ul>
-        </section>
+        </div>
 
-        <section class="component-card"><!--living the simple life-->
+        <div class="portfolio-card"><!--living the simple life-->
             <img src="http://michaelrinella.com/wp-content/uploads/2019/09/portfolioImagesLayout_simple-life-blog-min.png" class="card-component-img">
-            <h2 class="card-title"><a href="http://michaelrinella.com/simple-life/index.html" target="_blank">Living the Simple Life Blog</a></h2>
+            <h2 class="card-title">Living the Simple Life Blog</h2>
                 <p class="card-text-description">The Living the Simple Life Blog is a website that explores minimalism in life. The screenshots of the desktop 
                 view and mobile view detail the page layout and the design. I implemented the conversion of the design layouts into a responsive HTML/CSS 
                 prototype.</p>
                 <ul class="card-list-responsibilities">
                 <span class="card-text-uppercase">My Responsibilities:</span><br />
                 <li>UI Design-Development</li>
+                </ul>
+                <ul>
                 <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
                 <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
                 </ul>
-        </section>
+        </div>
 
-        <section class="component-card"><!--living the simple life-->
+        <div class="portfolio-card"><!--living the simple life-->
             <img src="http://michaelrinella.com/wp-content/uploads/2019/09/portfolioImagesLayout_simple-life-blog-min.png" class="card-component-img">
-            <h2 class="card-title"><a href="http://michaelrinella.com/simple-life/index.html" target="_blank">Living the Simple Life Blog</a></h2>
+            <h2 class="card-title">Living the Simple Life Blog</h2>
                 <p class="card-text-description">The Living the Simple Life Blog is a website that explores minimalism in life. The screenshots of the desktop 
                 view and mobile view detail the page layout and the design. I implemented the conversion of the design layouts into a responsive HTML/CSS 
                 prototype.</p>
                 <ul class="card-list-responsibilities">
                 <span class="card-text-uppercase">My Responsibilities:</span><br />
                 <li>UI Design-Development</li>
+                </ul>
+                <ul>
                 <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
                 <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
                 </ul>
-        </section>
+        </div>
 
+        <div class="portfolio-card"><!--living the simple life-->
+            <img src="http://michaelrinella.com/wp-content/uploads/2019/09/portfolioImagesLayout_simple-life-blog-min.png" class="card-component-img">
+            <h2 class="card-title">Living the Simple Life Blog</h2>
+                <p class="card-text-description">The Living the Simple Life Blog is a website that explores minimalism in life. The screenshots of the desktop 
+                view and mobile view detail the page layout and the design. I implemented the conversion of the design layouts into a responsive HTML/CSS 
+                prototype.</p>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Responsibilities:</span><br />
+                <li>UI Design-Development</li>
+                </ul>
+                <ul>
+                <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
+                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                </ul>
+        </div>
+
+        <div class="portfolio-card"><!--living the simple life-->
+            <img src="http://michaelrinella.com/wp-content/uploads/2019/09/portfolioImagesLayout_simple-life-blog-min.png" class="card-component-img">
+            <h2 class="card-title">Living the Simple Life Blog</h2>
+                <p class="card-text-description">The Living the Simple Life Blog is a website that explores minimalism in life. The screenshots of the desktop 
+                view and mobile view detail the page layout and the design. I implemented the conversion of the design layouts into a responsive HTML/CSS 
+                prototype.</p>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Responsibilities:</span><br />
+                <li>UI Design-Development</li>
+                </ul>
+                <ul>
+                <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
+                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                </ul>
+        </div>
+
+        <div class="portfolio-card"><!--living the simple life-->
+            <img src="http://michaelrinella.com/wp-content/uploads/2019/09/portfolioImagesLayout_simple-life-blog-min.png" class="card-component-img">
+            <h2 class="card-title">Living the Simple Life Blog</h2>
+                <p class="card-text-description">The Living the Simple Life Blog is a website that explores minimalism in life. The screenshots of the desktop 
+                view and mobile view detail the page layout and the design. I implemented the conversion of the design layouts into a responsive HTML/CSS 
+                prototype.</p>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Responsibilities:</span><br />
+                <li>UI Design-Development</li>
+                </ul>
+                <ul>
+                <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
+                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                </ul>
+        </div>
+
+        <div class="portfolio-card"><!--living the simple life-->
+            <img src="http://michaelrinella.com/wp-content/uploads/2019/09/portfolioImagesLayout_simple-life-blog-min.png" class="card-component-img">
+            <h2 class="card-title">Living the Simple Life Blog</h2>
+                <p class="card-text-description">The Living the Simple Life Blog is a website that explores minimalism in life. The screenshots of the desktop 
+                view and mobile view detail the page layout and the design. I implemented the conversion of the design layouts into a responsive HTML/CSS 
+                prototype.</p>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Responsibilities:</span><br />
+                <li>UI Design-Development</li>
+                </ul>
+                <ul>
+                <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
+                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                </ul>
+        </div>
+
+        <div class="portfolio-card"><!--living the simple life-->
+            <img src="http://michaelrinella.com/wp-content/uploads/2019/09/portfolioImagesLayout_simple-life-blog-min.png" class="card-component-img">
+            <h2 class="card-title">Living the Simple Life Blog</h2>
+                <p class="card-text-description">The Living the Simple Life Blog is a website that explores minimalism in life. The screenshots of the desktop 
+                view and mobile view detail the page layout and the design. I implemented the conversion of the design layouts into a responsive HTML/CSS 
+                prototype.</p>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Responsibilities:</span><br />
+                <li>UI Design-Development</li>
+                </ul>
+                <ul>
+                <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
+                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                </ul>
+        </div>
+
+        <div class="portfolio-card"><!--living the simple life-->
+            <img src="http://michaelrinella.com/wp-content/uploads/2019/09/portfolioImagesLayout_simple-life-blog-min.png" class="card-component-img">
+            <h2 class="card-title">Living the Simple Life Blog</h2>
+                <p class="card-text-description">The Living the Simple Life Blog is a website that explores minimalism in life. The screenshots of the desktop 
+                view and mobile view detail the page layout and the design. I implemented the conversion of the design layouts into a responsive HTML/CSS 
+                prototype.</p>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Responsibilities:</span><br />
+                <li>UI Design-Development</li>
+                </ul>
+                <ul>
+                <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
+                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                </ul>
+        </div>
+
+        <div class="portfolio-card"><!--living the simple life-->
+            <img src="http://michaelrinella.com/wp-content/uploads/2019/09/portfolioImagesLayout_simple-life-blog-min.png" class="card-component-img">
+            <h2 class="card-title">Living the Simple Life Blog</h2>
+                <p class="card-text-description">The Living the Simple Life Blog is a website that explores minimalism in life. The screenshots of the desktop 
+                view and mobile view detail the page layout and the design. I implemented the conversion of the design layouts into a responsive HTML/CSS 
+                prototype.</p>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Responsibilities:</span><br />
+                <li>UI Design-Development</li>
+                </ul>
+                <ul>
+                <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
+                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                </ul>
+        </div>
+
+        <div class="portfolio-card"><!--living the simple life-->
+            <img src="http://michaelrinella.com/wp-content/uploads/2019/09/portfolioImagesLayout_simple-life-blog-min.png" class="card-component-img">
+            <h2 class="card-title">Living the Simple Life Blog</h2>
+                <p class="card-text-description">The Living the Simple Life Blog is a website that explores minimalism in life. The screenshots of the desktop 
+                view and mobile view detail the page layout and the design. I implemented the conversion of the design layouts into a responsive HTML/CSS 
+                prototype.</p>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Responsibilities:</span><br />
+                <li>UI Design-Development</li>
+                </ul>
+                <ul>
+                <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
+                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                </ul>
+        </div>
+
+        <div class="portfolio-card"><!--living the simple life-->
+            <img src="http://michaelrinella.com/wp-content/uploads/2019/09/portfolioImagesLayout_simple-life-blog-min.png" class="card-component-img">
+            <h2 class="card-title">Living the Simple Life Blog</h2>
+                <p class="card-text-description">The Living the Simple Life Blog is a website that explores minimalism in life. The screenshots of the desktop 
+                view and mobile view detail the page layout and the design. I implemented the conversion of the design layouts into a responsive HTML/CSS 
+                prototype.</p>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Responsibilities:</span><br />
+                <li>UI Design-Development</li>
+                </ul>
+                <ul>
+                <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
+                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                </ul>
+        </div>
+
+        <div class="portfolio-card"><!--living the simple life-->
+            <img src="http://michaelrinella.com/wp-content/uploads/2019/09/portfolioImagesLayout_simple-life-blog-min.png" class="card-component-img">
+            <h2 class="card-title">Living the Simple Life Blog</h2>
+                <p class="card-text-description">The Living the Simple Life Blog is a website that explores minimalism in life. The screenshots of the desktop 
+                view and mobile view detail the page layout and the design. I implemented the conversion of the design layouts into a responsive HTML/CSS 
+                prototype.</p>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Responsibilities:</span><br />
+                <li>UI Design-Development</li>
+                </ul>
+                <ul>
+                <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
+                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                </ul>
+        </div>
+
+        <div class="portfolio-card"><!--living the simple life-->
+            <img src="http://michaelrinella.com/wp-content/uploads/2019/09/portfolioImagesLayout_simple-life-blog-min.png" class="card-component-img">
+            <h2 class="card-title">Living the Simple Life Blog</h2>
+                <p class="card-text-description">The Living the Simple Life Blog is a website that explores minimalism in life. The screenshots of the desktop 
+                view and mobile view detail the page layout and the design. I implemented the conversion of the design layouts into a responsive HTML/CSS 
+                prototype.</p>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Responsibilities:</span><br />
+                <li>UI Design-Development</li>
+                </ul>
+                <ul>
+                <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
+                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                </ul>
+        </div>
+
+        </div>
 
 
 
