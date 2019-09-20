@@ -9,20 +9,63 @@
  
 /* flatten html css */
 
-
-
 body, html {
-    margin: 3em;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 300;
     color: #000000;
     line-height: 1.6;
+    margin: 1em;
+
 }
+
+.portfolio-title {
+    margin-bottom: 0;
+}
+
+.fa-sketch, .fa-github-square {
+    font-size: 2rem;
+}
+
+.font-awesome {
+    display: inline-block;
+    margin: .2em .5em 0 0;
+}
+
+span {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+ul {
+    list-style-position: inside; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+ 
+.portfolio-title {
+    font-size: 2rem;
+    grid-column: 1 / -1;
+    padding-left: 1em;
+}
+
+
+
+@media (min-width: 600px) {
+
+    body, html {
+    margin: 2em;
+    }
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(365px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 1em;
     padding: 1em;
 
@@ -30,12 +73,6 @@ body, html {
 
 .portfolio-card {
     margin: 1em;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
 }
 
 .card-title {
@@ -46,22 +83,6 @@ img {
     font-size: 1rem;
 }
 
-.font-awesome {
-    display: inline-block;
-}
-
-span {
-    text-transform: uppercase;
-    font-weight: 700;
-
-}
-
-.fa-sketch, .fa-github-square {
-    font-size: 2rem;
-}
-
-ul {
-    list-style-position: inside; 
 }
 
 </style>
@@ -71,6 +92,8 @@ ul {
 
 <body>
         <div class="portfolio">
+        
+        <h1 class="portfolio-title current">Current Projects:</h1>
        
         <div class="portfolio-card"><!--living the simple life-->
             <img src="http://michaelrinella.com/wp-content/uploads/2019/09/portfolioImagesLayout_simple-life-blog-min.png" class="card-component-img">
@@ -82,7 +105,8 @@ ul {
                 <span class="card-text-uppercase">My Responsibilities:</span><br />
                 <li>UI Design-Development</li>
                 </ul>
-                <ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Work Samples:</span><br />
                 <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
                 <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
                 </ul>
@@ -98,7 +122,8 @@ ul {
                 <span class="card-text-uppercase">My Responsibilities:</span><br />
                 <li>UI Design-Development</li>
                 </ul>
-                <ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Work Samples:</span><br />
                 <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
                 <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
                 </ul>
@@ -114,7 +139,8 @@ ul {
                 <span class="card-text-uppercase">My Responsibilities:</span><br />
                 <li>UI Design-Development</li>
                 </ul>
-                <ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Work Samples:</span><br />
                 <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
                 <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
                 </ul>
@@ -130,7 +156,8 @@ ul {
                 <span class="card-text-uppercase">My Responsibilities:</span><br />
                 <li>UI Design-Development</li>
                 </ul>
-                <ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Work Samples:</span><br />
                 <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
                 <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
                 </ul>
@@ -146,7 +173,27 @@ ul {
                 <span class="card-text-uppercase">My Responsibilities:</span><br />
                 <li>UI Design-Development</li>
                 </ul>
-                <ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Work Samples:</span><br />
+                <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
+                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                </ul>
+        </div>
+
+        <h1 class="portfolio-title previous">Previous Projects:</h1>
+
+        <div class="portfolio-card"><!--living the simple life-->
+            <img src="http://michaelrinella.com/wp-content/uploads/2019/09/portfolioImagesLayout_simple-life-blog-min.png" class="card-component-img">
+            <h2 class="card-title">Living the Simple Life Blog</h2>
+                <p class="card-text-description">The Living the Simple Life Blog is a website that explores minimalism in life. The screenshots of the desktop 
+                view and mobile view detail the page layout and the design. I implemented the conversion of the design layouts into a responsive HTML/CSS 
+                prototype.</p>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Responsibilities:</span><br />
+                <li>UI Design-Development</li>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Work Samples:</span><br />
                 <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
                 <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
                 </ul>
@@ -162,7 +209,8 @@ ul {
                 <span class="card-text-uppercase">My Responsibilities:</span><br />
                 <li>UI Design-Development</li>
                 </ul>
-                <ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Work Samples:</span><br />
                 <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
                 <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
                 </ul>
@@ -178,7 +226,8 @@ ul {
                 <span class="card-text-uppercase">My Responsibilities:</span><br />
                 <li>UI Design-Development</li>
                 </ul>
-                <ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Work Samples:</span><br />
                 <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
                 <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
                 </ul>
@@ -194,7 +243,8 @@ ul {
                 <span class="card-text-uppercase">My Responsibilities:</span><br />
                 <li>UI Design-Development</li>
                 </ul>
-                <ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Work Samples:</span><br />
                 <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
                 <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
                 </ul>
@@ -210,7 +260,8 @@ ul {
                 <span class="card-text-uppercase">My Responsibilities:</span><br />
                 <li>UI Design-Development</li>
                 </ul>
-                <ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Work Samples:</span><br />
                 <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
                 <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
                 </ul>
@@ -226,7 +277,8 @@ ul {
                 <span class="card-text-uppercase">My Responsibilities:</span><br />
                 <li>UI Design-Development</li>
                 </ul>
-                <ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Work Samples:</span><br />
                 <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
                 <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
                 </ul>
@@ -242,7 +294,8 @@ ul {
                 <span class="card-text-uppercase">My Responsibilities:</span><br />
                 <li>UI Design-Development</li>
                 </ul>
-                <ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Work Samples:</span><br />
                 <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
                 <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
                 </ul>
@@ -258,7 +311,8 @@ ul {
                 <span class="card-text-uppercase">My Responsibilities:</span><br />
                 <li>UI Design-Development</li>
                 </ul>
-                <ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Work Samples:</span><br />
                 <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
                 <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
                 </ul>
@@ -274,23 +328,8 @@ ul {
                 <span class="card-text-uppercase">My Responsibilities:</span><br />
                 <li>UI Design-Development</li>
                 </ul>
-                <ul>
-                <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
-                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                </ul>
-        </div>
-
-        <div class="portfolio-card"><!--living the simple life-->
-            <img src="http://michaelrinella.com/wp-content/uploads/2019/09/portfolioImagesLayout_simple-life-blog-min.png" class="card-component-img">
-            <h2 class="card-title">Living the Simple Life Blog</h2>
-                <p class="card-text-description">The Living the Simple Life Blog is a website that explores minimalism in life. The screenshots of the desktop 
-                view and mobile view detail the page layout and the design. I implemented the conversion of the design layouts into a responsive HTML/CSS 
-                prototype.</p>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Responsibilities:</span><br />
-                <li>UI Design-Development</li>
-                </ul>
-                <ul>
+                <span class="card-text-uppercase">Work Samples:</span><br />
                 <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
                 <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
                 </ul>
