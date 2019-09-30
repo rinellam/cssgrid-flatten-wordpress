@@ -10,6 +10,10 @@
  
 /* flatten html css */
 
+* {
+    box-sizing: border-box;
+    }
+
 body, html {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
@@ -17,46 +21,56 @@ body, html {
     color: #000000;
     line-height: 1.6;
     margin: 1em;
-}
+    }
 
-ul {
+.portfolio-card ul {
     list-style-position: inside; 
-}
+    padding-left: inherit;
+    }
 
 img {
     max-width: 100%;
     height: auto;
     display: block;
-}
+    }
 
 .fab, 
 .fas {
     font-size: 2rem;
-}
+    color: #1E90FF;
+    }
+
+.portfolio .fab:hover, 
+.portfolio .fab:focus,
+.portfolio .fas:hover, 
+.portfolio .fas:focus {
+    font-size: 2rem;
+    color: #1E90FF;
+    }
 
 .all-caps-text {
     text-transform: uppercase;
-}
+    }
 
 .card-component-img {
     border-radius: 3px;
-}
+    }
 
 
 .font-awesome {
     display: inline-block;
-    margin: .2em .5em 0 0;
-}
+    margin: .2em .55em 0 0;
+    }
 
 .card-text-uppercase {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
-}
+    }
 
 .portfolio-card {
     margin-bottom: 2em;
-}
+    }
  
 .portfolio-title {
     font-size: 1.75rem;
@@ -64,16 +78,16 @@ img {
     grid-column: 1 / -1;
     text-align: center;
     justify-self: center;
-}
+    }
 
 .card-title {
     font-size: 1.35rem;
     font-weight: 300;
-}
+    }
 
 .card-text-description {
     font-size: 1rem;
-}
+    }
 
 
 @media (min-width: 600px) {
@@ -103,6 +117,9 @@ img {
     font-size: 1.5rem;
     }
 
+.card-list-ul-copy {
+    padding-top: 0;
+    }
 }
 
 </style>
@@ -117,49 +134,88 @@ img {
        
         <div class="portfolio-card"><!--living the simple life-->
             <img src="/img/jake-and-elwood-layout-min.png" class="card-component-img" alt="image of jake and elwood website and mobile">
-            <h2 class="card-title"><a href="#" target="_new">Jake & Elwood</a></h2>
-                <p class="card-text-description">The Living the Simple Life Blog is a website that explores minimalism in life. The screenshots of the desktop view and mobile view detail the page layout and the design. I implemented the conversion of the design layouts into a responsive HTML/CSS prototype.</p>
+            <h2 class="card-title">Jake & Elwood</h2>
+                <p class="card-text-description">The Jake & Elwood custom body shop website provides information about the company and their services.</p>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Responsibilities:</span><br />
-                <li>Layout and Design</li>
-                <li>UI/UX Design-Development</li> 
+                <span class="card-text-uppercase">My Role</span><br />
+                <span>UI Development + UX Design</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">Work Samples:</span><br />
-                <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
-                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                <span class="card-text-uppercase">Key Skills</span><br />
+                <span>Communication + Concept Ideation + Critical Thinking + HTML5, CSS3, JS + Implementation + Information Architecture + Project Management + Prototyping + Responsive Design + Sketch + Visual Design</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Accomplishments</span><br />
+                <li>Design interface mockups</li>
+                <li>Develop a responsive prototype using CSS Grid.</li>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Project Duration</span><br />
+                <span>September 2019</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Samples</span><br />
+                <li class="font-awesome" title="Sketch icon -  to Sketch file"><a href="https://sketch.cloud/s/e8Aqx" target="_blank"><i class="fab fa-sketch"></i></a></li>
+                <li class="font-awesome" title="GitHub icon -  to GitHub file"><a href="https://github.com/rinellam/jake-and-elwood-alt" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                <li class="font-awesome" title="Link icon - to Jake & Elwood website"><a href="http://michaelrinella.com/jake-and-elwood-alt/index.html" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
                 </ul>
         </div>
 
         <div class="portfolio-card"><!--living the simple life-->
             <img src="/img/bbq-webinar-layout-min.png" class="card-component-img">
-            <h2 class="card-title"><a href="#" target="_new">Austin BBQ Webinar</a></h2>
-                <p class="card-text-description">The BBQ webinar splash page is a webpage for an upcoming instructional webinar and provides information and a sign-up form. The screenshots of the desktop view and mobile view detail the page layout and the design. I implemented the conversion of the design layout into a responsive HTML/CSS prototype.</p>
+            <h2 class="card-title">Austin BBQ Webinar</h2>
+                <p class="card-text-description">The BBQ webinar splash page is a webpage for an upcoming instructional webinar.</p>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Responsibilities:</span><br />
-                <li>Layout and Design</li>
-                <li>UI/UX Design-Development</li>
+                <span class="card-text-uppercase">My Role</span><br />
+                <span>UI Development</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">Work Samples:</span><br />
-                <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
-                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                <span class="card-text-uppercase">Key Skills</span><br />
+                <span>Communication + Concept Ideation + Critical Thinking + HTML5, CSS3, JS + Implementation + Project Management + Prototyping + Responsive Design + Sketch + Visual Design</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Accomplishments</span><br />
+                <li>Design interface mockups</li>
+                <li>Develop a responsive prototype using Flexbox.</li>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Project Duration</span><br />
+                <span>August - September 2019</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Samples</span><br />
+                <li class="font-awesome" title="Sketch icon - to Sketch file"><a href="https://sketch.cloud/s/9ZePn" target="_blank"><i class="fab fa-sketch"></i></a></li>
+                <li class="font-awesome" title="GitHub icon -  to GitHub file"><a href="https://github.com/rinellam/bbq-splash-page" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                <li class="font-awesome" title="Link icon - to BBQ Webinar splash page"><a href="http://michaelrinella.com/bbq-splash-page/index.html" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
                 </ul>
         </div>
 
         <div class="portfolio-card"><!--living the simple life-->
             <img src="/img/living-simple-min.png" class="card-component-img">
-            <h2 class="card-title"><a href="#" target="_new">Living the Simple Life Blog</a></h2>
-                <p class="card-text-description">The BBQ webinar splash page is a webpage for an upcoming instructional webinar and provides information and a sign-up form. The screenshots of the desktop view and mobile view detail the page layout and the design. I implemented the conversion of the design layout into a responsive HTML/CSS prototype.</p>
+            <h2 class="card-title">Living the Simple Life Blog</h2>
+                <p class="card-text-description">The Living the Simple Life Blog is a website that explores minimalism in life.</p>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Responsibilities:</span><br />
-                <li>Layout and Design</li>
-                <li>UI/UX Design-Development</li>
+                <span class="card-text-uppercase">My Role</span><br />
+                <span>UI Development + UX Design</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">Work Samples:</span><br />
-                <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
-                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                <span class="card-text-uppercase">Key Skills</span><br />
+                <span>Communication + Concept Ideation + Critical Thinking + HTML5, CSS3, JS + Implementation + Information Architecture + Interviews + Project Management + Prototyping + Responsive Design + Sketch + Visual Design</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Accomplishments</span><br />
+                <li>Design interface mockups</li>
+                <li>Develop a responsive prototype using Flexbox.</li>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Project Duration</span><br />
+                <span>July - August 2019</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Samples</span><br />
+                <li class="font-awesome" title="Sketch icon - to Sketch doc"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
+                <li class="font-awesome" title="GitHub icon -  to Github file"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                <li class="font-awesome" title="Link icon - to Simple Life website"><a href="http://michaelrinella.com/simple-life/index.html" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
                 </ul>
         </div>
 
@@ -168,56 +224,90 @@ img {
         <div class="portfolio-card"><!--living the simple life-->
             <img src="/img/macbook-iphone-mockup.png" class="card-component-img">
             <h2 class="card-title">Cedars-Sinai</h2>
-                <p class="card-text-description">Cedars-Sinai Medical Center is a non-profit, tertiary 958-bed hospital and multi-specialty academic health science center located in the Beverly Grove neighborhood of Los Angeles, California. The website provides a list of the medical center’s programs and services, health libraries, office locations, and tools to assist patients with finding a doctor.</p>
+                <p class="card-text-description">Cedars-Sinai Medical Center is a non-profit, tertiary 958-bed hospital and multi-specialty academic health science center located in the Beverly Grove neighborhood of Los Angeles, California.</p>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Responsibilities:</span><br />
-                <li>UI Design-Development</li>
+                <span class="card-text-uppercase">My Role</span><br />
+                <span>UI Development + UX Design</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">Work Samples:</span><br />
+                <span class="card-text-uppercase">Key Skills</span><br />
+                <span>Analysis + Communication + Concept Ideation + Critical Thinking + HTML5, CSS3, JS + Implementation + Project Management + Responsive Design + Troubleshooting + User Scenarios + Usability Testing</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Accomplishments</span><br />
+                <li>Front-end component development</li>
+                <li>Front-end inmplimentation with AEM engineers</li>
+                <li>Develop User Scenarios for testing components</li>
+                <li>Usability and functional testing of components</li>
+                <li>Manage efforts of off-shore test team (China)</li>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Project Duration</span><br />
+                <span>2017 - 2019</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Samples</span><br />
                 <li class="font-awesome" title="Image file icon"><a href="#" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                <li class="font-awesome" title="Link icon - to Cedars-Sinai website"><a href="https://www.cedars-sinai.org/" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
                 </ul>
         </div>
 
         <div class="portfolio-card"><!--living the simple life-->
             <img src="/img/macbook-iphone-mockup.png" class="card-component-img">
             <h2 class="card-title">My CS-Link</h2>
-                <p class="card-text-description">My CS-Link is an online tool that offers patients access to parts of their medical records over a secure Internet connection. You can communicate with your physician with images, videos, or PDFs, book and request appointments, pay your bill and review your billing history, and view lab results securely online.</p>
+                <p class="card-text-description">My CS-Link is an online tool that offers patients access to parts of their medical records and the ability to connect with physicians over a secure Internet connection.</p>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Responsibilities:</span><br />
-                <li>Sprint Planning and Grooming</li>
-                <li>Component Development</li>
-                <li>UI/UX Design-Development</li>
-                <li>Test Case Development</li>
-                <li>Acceptance Criteria</li>
-                <li>Testing</li>
+                <span class="card-text-uppercase">My Role</span><br />
+                <span>UI Development + UX Design</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">Work Samples:</span><br />
+                <span class="card-text-uppercase">Key Skills</span><br />
+                <span>Analysis + Communication + Critical Thinking + HTML5, CSS3, JS + Implementation + Prototyping + Responsive Design + Troubleshooting + User Scenarios + Usability Testing + Visual Design</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Accomplishments</span><br />
+                <li>Front-end development</li>
+                <li>Develop User Scenarios for Usability Testing</li>
+                <li>Assist with site migration</li>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Project Duration</span><br />
+                <span>2012 - 2019</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Samples</span><br />
                 <li class="font-awesome" title="Image file icon"><a href="#" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                <li class="font-awesome" title="Link icon - to My CS Link website"><a href="https://www.mycslink.org/" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
                 </ul>
         </div>
 
         <div class="portfolio-card"><!--living the simple life-->
             <img src="/img/macbook-iphone-mockup.png" class="card-component-img">
             <h2 class="card-title">Cedars-Sinai Mobile App</h2>
-                <p class="card-text-description">The Cedars-Sinai app is a complete resource for managing medical records, connecting with a care team and exploring all Cedars-Sinai has to offer.</p>
+                <p class="card-text-description">The Cedars-Sinai mobile app is a complete resource for managing medical records, connecting with a care team and exploring all Cedars-Sinai has to offer.</p>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Responsibilities:</span><br />
-                <li>Sprint Planning and Grooming</li>
-                <li>Component Development</li>
-                <li>UI/UX Design-Development</li>
-                <li>Test Case Development</li>
-                <li>Acceptance Criteria</li>
-                <li>Testing</li>
+                <span class="card-text-uppercase">My Role</span><br />
+                <span>UX Design</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">Work Samples:</span><br />
-                <li class="font-awesome" title="Sketch icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
+                <span class="card-text-uppercase">Key Skills</span><br />
+                <span>Communication + Critical Thinking + Interviews + Project Management + Prototyping + Responsive Design + Sketch + Troubleshooting + User Scenarios + Usability Testing + Visual Design</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Accomplishments</span><br />
+                <li>Design UI mockups</li>
+                <li>Usability Testing for internally accessible features</li>
+                <li>Develop User Scenarios for testing components</li>
+                <li>Usability Testing for Wayfinding features</li>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Project Duration</span><br />
+                <span>2017 - 2019</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Samples</span><br />
                 <li class="font-awesome" title="Image file icon"><a href="#" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                <li class="font-awesome" title="Link icon to Apple Store for app link"><a href="https://apps.apple.com/us/app/cedars-sinai-my-cs-link/id1034088603" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
                 </ul>
         </div>
 
@@ -226,18 +316,26 @@ img {
             <h2 class="card-title">Cedars-Sinai Blog</h2>
                 <p class="card-text-description">Cedars-Sinai Blog is a website that offers articles highlighting patient stories, innovative medicine, and other happenings in Los Angeles and vibrant surrounding communities.</p>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Responsibilities:</span><br />
-                <li>Sprint Planning and Grooming</li>
-                <li>Component Development</li>
-                <li>UI/UX Design-Development</li>
-                <li>Test Case Development</li>
-                <li>Acceptance Criteria</li>
-                <li>Testing</li>
+                <span class="card-text-uppercase">My Role</span><br />
+                <span>UI Development</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">Work Samples:</span><br />
+                <span class="card-text-uppercase">Key Skills</span><br />
+                <span>Communication + Concept Ideation + Critical Thinking + HTML5, CSS3, JS + Implementation + Project Management + Responsive Design</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Accomplishments</span><br />
+                <li>Front-end development of Categories tag for Articles</li>
+                <li>Front-end  development of Sub Navigation</li>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Project Duration</span><br />
+                <span>2017 - 2019</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Samples</span><br />
                 <li class="font-awesome" title="Image file icon"><a href="#" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                <li class="font-awesome" title="Link icon - to Cedars-Sinai blog"><a href="https://www.cedars-sinai.org/blog.html" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
                 </ul>
         </div>
 
@@ -246,18 +344,30 @@ img {
             <h2 class="card-title">Cedars-Sinai Intranet</h2>
                 <p class="card-text-description">The Cedars-Sinai Intranet is an internal website that provides articles, communication, department information and documentation to the 12,000 + Cedars-Sinai employees and medical staff.</p>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Responsibilities:</span><br />
-                <li>Sprint Planning and Grooming</li>
-                <li>Component Development</li>
-                <li>UI/UX Design-Development</li>
-                <li>Test Case Development</li>
-                <li>Acceptance Criteria</li>
-                <li>Testing</li>
+                <span class="card-text-uppercase">My Role</span><br />
+                <span>UI Development + UX Design + Application Management</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">Work Samples:</span><br />
+                <span class="card-text-uppercase">Key Skills</span><br />
+                <span>Analysis + Account Provisioning + Communication + Component Development + Concept Ideation + Content Authoring + Critical Thinking + HTML5, CSS3, JS + Implementation + Information Architecture + Presentation + Project Management + Prototyping + Responsive Design + Technical Support + Troubleshooting + Usability Testing + User Support + Visual Design</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Accomplishments</span><br />
+                <li>Primary Admin UI contact for the Cedars-Sinai Intranet</li>
+                <li>Provide design and development support to the Cedars-Sinai maintainer community</li>
+                <li>Develop self-service CMS end-user support documentation</li>
+                <li>Develop an HTML5 video and audio content type template for the CMS</li>
+                <li>Review and approve all CMS submissions for publication</li>
+                <li>Provide onboarding instruction and user account configuration for the CMS maintainer community</li>
+                <li>Assist internal teams with troubleshooting application issues</li>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Project Duration</span><br />
+                <span>2012 - 2019</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Samples</span><br />
                 <li class="font-awesome" title="Image file icon"><a href="#" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
                 </ul>
         </div>
 
@@ -266,118 +376,113 @@ img {
             <h2 class="card-title">EIS Apply (CSMC)</h2>
                 <p class="card-text-description">EIS Apply is an internal website for the Enterprise Information Services department that provides managers and employees with job resources, articles, new employee on-boarding information, and EIS job postings.</p>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Responsibilities:</span><br />
-                <li>Sprint Planning and Grooming</li>
-                <li>Component Development</li>
-                <li>UI/UX Design-Development</li>
-                <li>Test Case Development</li>
-                <li>Acceptance Criteria</li>
-                <li>Testing</li>
+                <span class="card-text-uppercase">My Role</span><br />
+                <span>UI Development + UX Design + Application Management</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">Work Samples:</span><br />
+                <span class="card-text-uppercase">Key Skills</span><br />
+                <span>Analysis + Account Provisioning + Communication + Concept Ideation + Content Authoring + Critical Thinking + HTML5, CSS3, JS + Implementation + Information Architecture + Interviews + Presentation + Project Management + Prototyping + Responsive Design + Technical Support + Troubleshooting + Usability Testing + User Support + Visual Design</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Accomplishments</span><br />
+                <li>Primary Admin UI contact for the EIS Apply website</li>
+                <li>Design interface mockups</li>
+                <li>Provide WordPress Editor application support</li>
+                <li>Front-end development for features</li>
+                <li>Manage WordPress development environments</li>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Project Duration</span><br />
+                <span>2012 - 2017</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Samples</span><br />
                 <li class="font-awesome" title="Image file icon"><a href="#" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                </ul>
-        </div>
-
-        <div class="portfolio-card"><!--living the simple life-->
-            <img src="/img/macbook-iphone-mockup.png" class="card-component-img">
-            <h2 class="card-title">Digital Signage (CSMC)</h2>
-                <p class="card-text-description">Cedars-Sinai Digital Signage delivers articles, marketing messages and communications to over 166 display locations throughout the Cedars-Sinai Medical Center and affiliate locations.</p>
-                <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Responsibilities:</span><br />
-                <li>Sprint Planning and Grooming</li>
-                <li>Component Development</li>
-                <li>UI/UX Design-Development</li>
-                <li>Test Case Development</li>
-                <li>Acceptance Criteria</li>
-                <li>Testing</li>
-                </ul>
-                <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">Work Samples:</span><br />
-                <li class="font-awesome" title="Image file icon"><a href="#" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                </ul>
-        </div>
-
-        <div class="portfolio-card"><!--living the simple life-->
-            <img src="/img/macbook-iphone-mockup.png" class="card-component-img">
-            <h2 class="card-title">Cedars-Sinai Benefits</h2>
-                <p class="card-text-description">The Cedars-Sinai Benefits website is an online resource for employees to manage their employee benefits, including healthcare, and retirement benefits.</p>
-                <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Responsibilities:</span><br />
-                <li>Sprint Planning and Grooming</li>
-                <li>Component Development</li>
-                <li>UI/UX Design-Development</li>
-                <li>Test Case Development</li>
-                <li>Acceptance Criteria</li>
-                <li>Testing</li>
-                </ul>
-                <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">Work Samples:</span><br />
-                <li class="font-awesome" title="Image file icon"><a href="#" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                </ul>
-        </div>
-
-        <div class="portfolio-card"><!--living the simple life-->
-            <img src="/img/macbook-iphone-mockup.png" class="card-component-img">
-            <h2 class="card-title">Gignews, Inc.</h2>
-                <p class="card-text-description">Giganews, Inc is a Usenet/newsgroup service provider. Giganews currently offers service to over 10 million broadband users in 180 countries. The Giganews website offers content, documentation and support in 10 languages.</p>
-                <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Responsibilities:</span><br />
-                <li>Sprint Planning and Grooming</li>
-                <li>Component Development</li>
-                <li>UI/UX Design-Development</li>
-                <li>Test Case Development</li>
-                <li>Acceptance Criteria</li>
-                <li>Testing</li>
-                </ul>
-                <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">Work Samples:</span><br />
-                <li class="font-awesome" title="Image file icon"><a href="#" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                </ul>
-        </div>
-
-        <div class="portfolio-card"><!--living the simple life-->
-            <img src="/img/macbook-iphone-mockup.png" class="card-component-img">
-            <h2 class="card-title">Data Foundry</h2>
-                <p class="card-text-description">Data Foundry is headquartered in Austin, Texas and provides data center colocation, disaster recovery and managed services for enterprise customers and small businesses across a variety of industries. The website contains information about services, data centers, and a blog that provides articles, news, and commentary.</p>
-                <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Responsibilities:</span><br />
-                <li>Sprint Planning and Grooming</li>
-                <li>Component Development</li>
-                <li>UI/UX Design-Development</li>
-                <li>Test Case Development</li>
-                <li>Acceptance Criteria</li>
-                <li>Testing</li>
-                </ul>
-                <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">Work Samples:</span><br />
-                <li class="font-awesome" title="Image file icon"><a href="#" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
                 </ul>
         </div>
 
         <div class="portfolio-card"><!--living the simple life-->
             <img src="/img/macbook-iphone-mockup.png" class="card-component-img">
             <h2 class="card-title">Metrolink</h2>
-                <p class="card-text-description">Metrolink provides Southern California with a safe, convenient alternative to driving. The website contains rider information, destination information, schedules, train status, and the ability to purchase tickets.</p>
+                <p class="card-text-description">Metrolink is a rail system based in Southern California that is designed for commuter travel and is made up of 55 stations across a rail network measuring 388.2 miles.</p>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Responsibilities:</span><br />
-                <li>Sprint Planning and Grooming</li>
-                <li>Component Development</li>
-                <li>UI/UX Design-Development</li>
-                <li>Test Case Development</li>
-                <li>Acceptance Criteria</li>
-                <li>Testing</li>
+                <span class="card-text-uppercase">My Role</span><br />
+                <span>UX Design</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">Work Samples:</span><br />
-                <li class="font-awesome" title="Image file icon"><a href="#" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                <span class="card-text-uppercase">Key Skills</span><br />
+                <span>Analysis + Communication + Critical Thinking + Presentation + User Research</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Accomplishments</span><br />
+                <li>Assist with developing UX documentation for presentations to stakeholders</li>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Project Duration</span><br />
+                <span>April - July 2011</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Samples</span><br />
+                <li class="font-awesome" title="Image file icon -  to screenshot of webpage"><a href="http://michaelrinella.com/wp-content/uploads/2019/09/metrolink-larger-min-e1568828174394.jpg" target="_blank"><i class="fas fa-file-image"></i></a></li>
+                <li class="font-awesome" title="Link icon - to Metrolink website"><a href="https://www.goldenfrog.com/" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
+                </ul>
+        </div>
+
+        <div class="portfolio-card"><!--living the simple life-->
+            <img src="/img/macbook-iphone-mockup.png" class="card-component-img">
+            <h2 class="card-title">Gignews, Inc.</h2>
+                <p class="card-text-description">Giganews, Inc is a Usenet/newsgroup service provider. Giganews currently offers service to over 10 million broadband users in 180 countries.</p>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Role</span><br />
+                <span>UX Design</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Key Skills</span><br />
+                <span>Analysis + Communication + Critical Thinking + HTML, CSS + Implementation + Prototyping + User Flows + Visual Design</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Accomplishments</span><br />
+                <li>Design interface mockups & graphical assets</li>
+                <li>Create wireframes</li>
+                <li>Develop HTML/CSS prototypes</li>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Project Duration</span><br />
+                <span>Jan 2010 – Mar 2010</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Samples</span><br />
+                <li class="font-awesome" title="Image file icon -  to screenshot of webpage"><a href="http://michaelrinella.com/wp-content/uploads/2019/09/gignews-larger-min-e1568828329159.jpg" target="_blank"><i class="fas fa-file-image"></i></a></li>
+                <li class="font-awesome" title="Link icon to Giganews website"><a href="https://www.giganews.com/" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
+                </ul>
+        </div>
+
+        <div class="portfolio-card"><!--living the simple life-->
+            <img src="/img/macbook-iphone-mockup.png" class="card-component-img">
+            <h2 class="card-title">Data Foundry</h2>
+                <p class="card-text-description">Data Foundry is headquartered in Austin, Texas and provides data center colocation, disaster recovery and managed services for enterprise customers and small businesses across a variety of industries.</p>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Role</span><br />
+                <span>UX Design</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Key Skills</span><br />
+                <span>Analysis + Communication + Critical Thinking + HTML, CSS + Implementation + Prototyping + User Flows + Visual Design</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Accomplishments</span><br />
+                <li>Design interface mockups & graphical assets</li>
+                <li>Create wireframes</li>
+                <li>Develop HTML/CSS prototypes</li>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Project Duration</span><br />
+                <span>Jan 2010 – Mar 2010</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Samples</span><br />
+                <li class="font-awesome" title="Image file icon -  to screenshot of webpage"><a href="http://michaelrinella.com/wp-content/uploads/2019/09/data.foundry-larger-min-e1568828384573.jpg" target="_blank"><i class="fas fa-file-image"></i></a></li>
+                <li class="font-awesome" title="Link icon - Data Foundy website"><a href="https://www.datafoundry.com/data-centers/texas-1/" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
                 </ul>
         </div>
 
@@ -386,36 +491,45 @@ img {
             <img src="/img/macbook-iphone-mockup.png" class="card-component-img">
             </div>
             <h2 class="card-title">Golden Frog</h2>
-                <p class="card-text-description">Golden Frog develops software and services that provide reliability, performance and security. Golden Frog optimizes Internet connections to increase performance and speed, enable privacy and provide access to a free and open Internet. The website contains information on products, services, and links to the community where ideas and discussions are shared.</p>
+                <p class="card-text-description">Golden Frog develops software and services that provide reliability, performance and security.</p>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Responsibilities:</span><br />
-                <li>Sprint Planning and Grooming</li>
-                <li>Component Development</li>
-                <li>UI/UX Design-Development</li>
-                <li>Test Case Development</li>
-                <li>Acceptance Criteria</li>
-                <li>Testing</li>
+                <span class="card-text-uppercase">My Role</span><br />
+                <span>UX Design</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">Work Samples:</span><br />
-                <li class="font-awesome" title="Image file icon"><a href="#" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="GitHub icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                <span class="card-text-uppercase">Key Skills</span><br />
+                <span>Analysis + Communication + Critical Thinking + HTML, CSS + Implementation + Prototyping + User Flows + Visual Design</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Accomplishments</span><br />
+                <li>Design interface mockups & graphical assets</li>
+                <li>Create wireframes</li>
+                <li>Develop HTML/CSS prototypes</li>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">Project Duration</span><br />
+                <span>Jan 2010 – Mar 2010</span>
+                </ul>
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Samples</span><br />
+                <li class="font-awesome" title="Image file icon -  to screenshot of webpage"><a href="http://michaelrinella.com/wp-content/uploads/2019/09/golden-larger-min-e1568828212499.jpg" target="_blank"><i class="fas fa-file-image"></i></a></li>
+                <li class="font-awesome" title="Link icon - to Golden Frog website"><a href="https://www.goldenfrog.com/" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
                 </ul>
         </div>
 
         </div>
         <!-- raondom colors for card image background-->
         <script>
+                {
+                let colorsArray = ['#eec643', '#ed6a5a', '#1e90ff', '#084887', '#dfe0e2', '#98e2c6', '#bfedef', '#909cc2', '#f9ab55', '#f76f8e', '#96616b', '#ffead0', '#db504a'];
+                let divsArray = document.getElementsByClassName('card-component-img');
+                let uniqueColorIndex = 0;
 
-                var colorsArray = ['#eec643', '#ed6a5a', '#1e90ff', '#084887', '#dfe0e2', '#98e2c6', '#bfedef', '#909cc2', '#f9ab55', '#f76f8e', '#96616b', '#ffead0', '#db504a'];
-                var divsArray = document.getElementsByClassName('card-component-img');
-                var uniqueColorIndex = 0;
-
-                for(var i=0; i < divsArray.length; i++){
+                for(let i=0; i < divsArray.length; i++){
                 uniqueColorIndex = Math.floor(Math.random() * (colorsArray.length - 0 + 1));
                 divsArray[i].style['background-color'] = colorsArray[uniqueColorIndex];
                 };
-        
+                }
         </script>
 
 
