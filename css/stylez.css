@@ -1,3 +1,6 @@
+/* portfolio css */
+
+/*
 * {
     box-sizing: border-box;
     }
@@ -9,7 +12,7 @@ body, html {
     color: #000000;
     line-height: 1.6;
     margin: 1em;
-    }
+    }*/
 
 .portfolio-card ul {
     list-style-position: inside; 
@@ -28,10 +31,10 @@ img {
     color: #1E90FF;
     }
 
-.fab:hover, 
-.fab:focus,
-.fas:hover, 
-.fas:focus {
+.portfolio .fab:hover, 
+.portfolio .fab:focus,
+.portfolio .fas:hover, 
+.portfolio .fas:focus {
     font-size: 2rem;
     color: #1E90FF;
     }
@@ -42,6 +45,7 @@ img {
 
 .card-component-img {
     border-radius: 3px;
+    background-color: #DBDBDB;
     }
 
 
@@ -108,4 +112,3 @@ img {
 .card-list-ul-copy {
     padding-top: 0;
     }
-}
