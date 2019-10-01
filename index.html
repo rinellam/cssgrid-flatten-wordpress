@@ -19,7 +19,7 @@ font-family: 'Raleway', sans-serif;
 */
 
 
- /*
+ 
  *{
     box-sizing: border-box;
     }
@@ -32,20 +32,23 @@ body, html {
     line-height: 1.6;
     margin: 1em;
     }
-*/
+
 
 .portfolio-card ul {
     list-style-position: inside; 
     padding-left: inherit;
     }
 
-/*
+
 img {
     max-width: 100%;
     height: auto;
     display: block;
     }
-*/
+
+strong {
+    font-weight: 700;
+}
 
 .all-caps-text {
     text-transform: uppercase;
@@ -94,17 +97,21 @@ img {
     font-weight: 300;
     }
 
+.card-subtitle { /* new */
+    font-size: 1.15rem;
+    font-weight: 300;
+    }
+
+
 .card-text-description {
     font-size: 1rem;
     }
 
 
 @media (min-width: 600px) {
-    /*
     body, html {
     margin: 2em 3em;
     }
-    */
 
 .portfolio {
     display: grid;
@@ -127,6 +134,12 @@ img {
     font-size: 1.75rem;
     font-family: 'Lato', sans-serif;
     }
+
+.card-subtitle { /* new */
+    font-size: 1.5rem;
+    font-weight: 300;
+    }
+
 
 .card-list-ul-copy {
     padding-top: 0;
@@ -165,13 +178,6 @@ img {
                 <span class="card-text-uppercase">Project Duration</span><br />
                 <span>September 2019</span>
                 </ul>
-
-                <ul class="card-list-responsibilities">
-                    <span class="card-text-uppercase"><strong>Accomplishments:</strong> Consult with business stakeholders to review current products and provide design solutions to solve user needs and business challenges. </span><br />
-                    <li>Provide design solutions using user research, competitive analysis, interviews, interaction design, visual design, and UI design.</li>
-                    <span><em>xProducts included: Connected Family Project, 411 First Floor, Moonlight Lounge</em></span>
-                </ul>
-
                 <ul class="card-list-responsibilities">
                 <span class="card-text-uppercase">My Samples & External Link</span><br />
                 <li class="font-icon"><a href="https://sketch.cloud/s/e8Aqx" target="_blank"><i class="fa fa-diamond"></a></i></li>
