@@ -2,7 +2,8 @@
 <html>
 <head>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Raleway:400,400i,700&display=swap" rel="stylesheet"> 
         
 <title></title>
 
@@ -10,45 +11,41 @@
  
 /* flatten html css */
 
-/**
- {
+/* 
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700|Raleway:400,400i,700&display=swap');
+
+font-family: 'Lato', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+
+ /*
+ *{
     box-sizing: border-box;
     }
 
 body, html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     font-weight: 300;
     color: #000000;
     line-height: 1.6;
     margin: 1em;
     }
-    */
+*/
 
 .portfolio-card ul {
     list-style-position: inside; 
     padding-left: inherit;
     }
 
+/*
 img {
     max-width: 100%;
     height: auto;
     display: block;
     }
-
-.fab, 
-.fas {
-    font-size: 2rem;
-    color: #1E90FF;
-    }
-
-.portfolio .fab:hover, 
-.portfolio .fab:focus,
-.portfolio .fas:hover, 
-.portfolio .fas:focus {
-    font-size: 2rem;
-    color: #1E90FF;
-    }
+*/
 
 .all-caps-text {
     text-transform: uppercase;
@@ -59,11 +56,20 @@ img {
     background-color: #DBDBDB;
     }
 
-
-.font-awesome {
-    display: inline-block;
-    margin: .2em .55em 0 0;
+.fa {
+    font-size: 2.25rem;
+    color: #1E90FF;
+    text-decoration: none;
     }
+    
+.fa:hover {
+    text-decoration: underline;
+    }
+
+.font-icon {
+    display: inline-block;
+    margin: .2em .50em 0 0;
+}
 
 .card-text-uppercase {
     text-transform: uppercase;
@@ -77,7 +83,7 @@ img {
  
 .portfolio-title {
     font-size: 1.75rem;
-    border-bottom: 10px solid #dbdbdb;
+    border-bottom: 10px solid #DBDBDB;
     grid-column: 1 / -1;
     text-align: center;
     justify-self: center;
@@ -94,10 +100,11 @@ img {
 
 
 @media (min-width: 600px) {
-
-    /*body, html {
+    /*
+    body, html {
     margin: 2em 3em;
-    }*/
+    }
+    */
 
 .portfolio {
     display: grid;
@@ -117,7 +124,8 @@ img {
     }
 
 .card-title {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    font-family: 'Lato', sans-serif;
     }
 
 .card-list-ul-copy {
@@ -157,11 +165,21 @@ img {
                 <span class="card-text-uppercase">Project Duration</span><br />
                 <span>September 2019</span>
                 </ul>
+
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Samples & Link</span><br />
-                <li class="font-awesome" title="Sketch icon -  to Sketch file"><a href="https://sketch.cloud/s/e8Aqx" target="_blank"><i class="fab fa-sketch"></i></a></li>
+                    <span class="card-text-uppercase"><strong>Accomplishments:</strong> Consult with business stakeholders to review current products and provide design solutions to solve user needs and business challenges. </span><br />
+                    <li>Provide design solutions using user research, competitive analysis, interviews, interaction design, visual design, and UI design.</li>
+                    <span><em>xProducts included: Connected Family Project, 411 First Floor, Moonlight Lounge</em></span>
+                </ul>
+
+                <ul class="card-list-responsibilities">
+                <span class="card-text-uppercase">My Samples & External Link</span><br />
+                <li class="font-icon"><a href="https://sketch.cloud/s/e8Aqx" target="_blank"><i class="fa fa-diamond"></a></i></li>
+                <li class="font-icon"><a href="https://github.com/rinellam/jake-and-elwood-alt" target="_blank"><i class="fa fa-github"></a></i></li>
+                <li class="font-icon"><a href="http://michaelrinella.com/jake-and-elwood-alt/index.html" target="_blank"><i class="fa fa-external-link-square"></a></i></li>
+                <!--<li class="font-awesome" title="Sketch icon -  to Sketch file"><a href="https://sketch.cloud/s/e8Aqx" target="_blank"><i class="fab fa-sketch"></i></a></li>
                 <li class="font-awesome" title="GitHub icon -  to GitHub file"><a href="https://github.com/rinellam/jake-and-elwood-alt" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                <li class="font-awesome" title="Link icon - to Jake & Elwood website"><a href="http://michaelrinella.com/jake-and-elwood-alt/index.html" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
+                <li class="font-awesome" title="Link icon - to Jake & Elwood website"><a href="http://michaelrinella.com/jake-and-elwood-alt/index.html" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li> -->
                 </ul>
         </div>
 
@@ -187,10 +205,10 @@ img {
                 <span>August - September 2019</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Samples & Link</span><br />
-                <li class="font-awesome" title="Sketch icon - to Sketch file"><a href="https://sketch.cloud/s/9ZePn" target="_blank"><i class="fab fa-sketch"></i></a></li>
-                <li class="font-awesome" title="GitHub icon -  to GitHub file"><a href="https://github.com/rinellam/bbq-splash-page" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                <li class="font-awesome" title="Link icon - to BBQ Webinar splash page"><a href="http://michaelrinella.com/bbq-splash-page/index.html" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
+                <span class="card-text-uppercase">My Samples & External Link</span><br />
+                <li class="font-icon"><a href="https://sketch.cloud/s/9ZePn" target="_blank"><i class="fa fa-diamond"></a></i></li>
+                <li class="font-icon"><a href="https://github.com/rinellam/bbq-splash-page" target="_blank"><i class="fa fa-github"></a></i></li>
+                <li class="font-icon"><a href="http://michaelrinella.com/bbq-splash-page/index.html" target="_blank"><i class="fa fa-external-link-square"></a></i></li>
                 </ul>
         </div>
 
@@ -216,10 +234,10 @@ img {
                 <span>July - August 2019</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Samples & Link</span><br />
-                <li class="font-awesome" title="Sketch icon - to Sketch doc"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fab fa-sketch"></i></a></li>
-                <li class="font-awesome" title="GitHub icon -  to Github file"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                <li class="font-awesome" title="Link icon - to Simple Life website"><a href="http://michaelrinella.com/simple-life/index.html" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
+                <span class="card-text-uppercase">My Samples & External Link</span><br />
+                <li class="font-icon"><a href="https://sketch.cloud/s/8zKz8" target="_blank"><i class="fa fa-diamond"></a></i></li>
+                <li class="font-icon"><a href="https://github.com/rinellam/simple-life" target="_blank"><i class="fa fa-github"></a></i></li>
+                <li class="font-icon"><a href="http://michaelrinella.com/simple-life/index.html" target="_blank"><i class="fa fa-external-link-square"></a></i></li>
                 </ul>
         </div>
 
@@ -250,9 +268,8 @@ img {
                 <span>2017 - 2019</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Samples & Link</span><br />
-                <li class="font-awesome" title="Image file icon"><a href="#" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="Link icon - to Cedars-Sinai website"><a href="https://www.cedars-sinai.org/" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
+                <span class="card-text-uppercase">External Link</span><br />
+                <li class="font-icon" title="Link icon - to Cedars-Sinai website"><a href="https://www.cedars-sinai.org/" target="_blank"><i class="fa fa-external-link-square"></a></i></li>
                 </ul>
         </div>
 
@@ -279,9 +296,8 @@ img {
                 <span>2012 - 2019</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Samples & Link</span><br />
-                <li class="font-awesome" title="Image file icon"><a href="#" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="Link icon - to My CS Link website"><a href="https://www.mycslink.org/" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
+                <span class="card-text-uppercase">External Link</span><br />
+                <li class="font-icon" title="Link icon - to My CS Link website"><a href="https://www.mycslink.org/" target="_blank"><i class="fa fa-external-link-square"></a></i></li>
                 </ul>
         </div>
 
@@ -309,9 +325,8 @@ img {
                 <span>2017 - 2019</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Samples & Link</span><br />
-                <li class="font-awesome" title="Image file icon"><a href="#" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="Link icon to Apple Store for app link"><a href="https://apps.apple.com/us/app/cedars-sinai-my-cs-link/id1034088603" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
+                <span class="card-text-uppercase">External Link</span><br />
+                <li class="font-icon" title="Link icon to Apple Store for app link"><a href="https://apps.apple.com/us/app/cedars-sinai-my-cs-link/id1034088603" target="_blank"><i class="fa fa-external-link-square"></a></i></li>
                 </ul>
         </div>
 
@@ -337,9 +352,8 @@ img {
                 <span>2018 - 2019</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Samples & Link</span><br />
-                <li class="font-awesome" title="Image file icon"><a href="#" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="Link icon - to Cedars-Sinai blog"><a href="https://www.cedars-sinai.org/blog.html" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
+                <span class="card-text-uppercase">External Link</span><br />
+                <li class="font-icon" title="Link icon - to Cedars-Sinai blog"><a href="https://www.cedars-sinai.org/blog.html" target="_blank"><i class="fa fa-external-link-square"></a></i></li>
                 </ul>
         </div>
 
@@ -369,10 +383,6 @@ img {
                 <span class="card-text-uppercase">Project Duration</span><br />
                 <span>2012 - 2019</span>
                 </ul>
-                <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Samples & Link</span><br />
-                <li class="font-awesome" title="Image file icon"><a href="#" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                </ul>
         </div>
 
         <div class="portfolio-card"><!--living the simple life-->
@@ -399,10 +409,6 @@ img {
                 <span class="card-text-uppercase">Project Duration</span><br />
                 <span>2012 - 2017</span>
                 </ul>
-                <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Samples & Link</span><br />
-                <li class="font-awesome" title="Image file icon"><a href="#" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                </ul>
         </div>
 
         <div class="portfolio-card"><!--living the simple life-->
@@ -426,9 +432,8 @@ img {
                 <span>April - July 2011</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Samples & Link</span><br />
-                <li class="font-awesome" title="Image file icon -  to screenshot of webpage"><a href="http://michaelrinella.com/wp-content/uploads/2019/09/metrolink-larger-min-e1568828174394.jpg" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="Link icon - to Metrolink website"><a href="https://www.goldenfrog.com/" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
+                <span class="card-text-uppercase">External Link</span><br />
+                <li class="font-icon" title="Link icon - to Metrolink website"><a href="https://www.metrolinktrains.com/" target="_blank"><i class="fa fa-external-link-square"></a></i></li>
                 </ul>
         </div>
 
@@ -455,9 +460,8 @@ img {
                 <span>Jan 2010 – Mar 2010</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Samples & Link</span><br />
-                <li class="font-awesome" title="Image file icon -  to screenshot of webpage"><a href="http://michaelrinella.com/wp-content/uploads/2019/09/gignews-larger-min-e1568828329159.jpg" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="Link icon to Giganews website"><a href="https://www.giganews.com/" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
+                <span class="card-text-uppercase">External Link</span><br />
+                <li class="font-icon" title="Link icon to Giganews website"><a href="https://www.giganews.com/" target="_blank"><i class="fa fa-external-link-square"></a></i></li>
                 </ul>
         </div>
 
@@ -484,9 +488,8 @@ img {
                 <span>Jan 2010 – Mar 2010</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Samples & Link</span><br />
-                <li class="font-awesome" title="Image file icon -  to screenshot of webpage"><a href="http://michaelrinella.com/wp-content/uploads/2019/09/data.foundry-larger-min-e1568828384573.jpg" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="Link icon - Data Foundy website"><a href="https://www.datafoundry.com/data-centers/texas-1/" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
+                <span class="card-text-uppercase">External Link</span><br />
+                <li class="font-icon" title="Link icon - Data Foundy website"><a href="https://www.datafoundry.com/data-centers/texas-1/" target="_blank"><i class="fa fa-external-link-square"></a></i></li>
                 </ul>
         </div>
 
@@ -515,9 +518,8 @@ img {
                 <span>Jan 2010 – Mar 2010</span>
                 </ul>
                 <ul class="card-list-responsibilities">
-                <span class="card-text-uppercase">My Samples & Link</span><br />
-                <li class="font-awesome" title="Image file icon -  to screenshot of webpage"><a href="http://michaelrinella.com/wp-content/uploads/2019/09/golden-larger-min-e1568828212499.jpg" target="_blank"><i class="fas fa-file-image"></i></a></li>
-                <li class="font-awesome" title="Link icon - to Golden Frog website"><a href="https://www.goldenfrog.com/" target="_blank"><i class="fas fa-external-link-square-alt"></i></a></li>
+                <span class="card-text-uppercase">External Link</span><br />
+                <li class="font-icon" title="Link icon - to Golden Frog website"><a href="https://www.goldenfrog.com/" target="_blank"><i class="fa fa-external-link-square"></a></i></li>
                 </ul>
         </div>
 
