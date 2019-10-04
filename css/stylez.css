@@ -1,4 +1,21 @@
-/* flatten html css */
+
+/*
+Theme URL: http://michaelrinella.com
+Author: Michael Rinella
+Author URL: http://michaelrinella.com
+*/
+
+/*
+_____________            ___________       
+___  __ \__(_)______________  /__  /_____ _
+__  /_/ /_  /__  __ \  _ \_  /__  /_  __ `/
+_  _, _/_  / _  / / /  __/  / _  / / /_/ / 
+/_/ |_| /_/  /_/ /_/\___//_/  /_/  \__,_/  
+                                                                       ,                                                     
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700|Raleway:400,400i,700&display=swap');
+
 
 /* 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700|Raleway:400,400i,700&display=swap');
@@ -7,6 +24,36 @@ font-family: 'Lato', sans-serif;
 font-family: 'Raleway', sans-serif;
 */
 
+#wp-block-themeisle-blocks-advanced-column-ba1cf018,
+#wp-block-themeisle-blocks-advanced-columns-f1068bb8 {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+
+strong {
+    font-weight: 700;
+    }
+
+.widget-line-height {
+    line-height: 1.6;
+    }
+    
+.widget-colored-bkg {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+    
+.outline-border-content {
+    outline: 1px solid #bbbbbb;
+	padding: 2em;
+    }
+
+.indent-second-line {
+    list-style-position: inside;
+    padding-left: 1em;
+    text-indent: -1em;
+    }
 
 .portfolio-card ul {
     list-style-position: inside; 
@@ -21,20 +68,63 @@ font-family: 'Raleway', sans-serif;
     border-radius: 3px;
     background-color: #DBDBDB;
     }
+    
+/* remove margin and padding for mobile view */
+.entry-content a, .entry-summary a, .comment-content a, .widget a, .site-footer .widget-area a, .posts-navigation a, .widget_authors a strong {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    }
+    
+/* ============
+fonts
+============ */
 
-.fa {
-    font-size: 2.25rem;
+.entry-title,
+.entry-date {
+    font-family: 'Lato', sans-serif;
+}
+
+i.fa {
+    font-size: 1.5rem;
     color: #1E90FF;
     text-decoration: none;
+    box-shadow: none;
     }
     
 .fa:hover {
-    text-decoration: underline;
+    color: #000000;
+    text-decoration: none;
     }
 
-.font-icon {
+li.font-icon {
     display: inline-block;
     margin: .2em .50em 0 0;
+    text-decoration: none;
+    box-shadow: none;
+    }
+    
+/* increase size of github icon */
+.fa-github::before,
+.fa-github::after {
+    font-size: 1.6rem;
+    }
+
+.portfolio-title {
+    font-family: 'Lato', sans-serif;
+    }
+    
+#top-menu,
+#menu-main-nav li {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem; 
+}
+.card-text-description, 
+.card-text-uppercase,
+.card-list-responsibilities, 
+.card-list-responsibilities li, 
+.card-list-responsibilities span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.15rem;
 }
 
 .card-text-uppercase {
@@ -49,47 +139,265 @@ font-family: 'Raleway', sans-serif;
  
 .portfolio-title {
     font-size: 1.75rem;
-    border-bottom: 10px solid #DBDBDB;
+    /*border-bottom: 10px solid #DBDBDB;*/
     grid-column: 1 / -1;
     text-align: center;
     justify-self: center;
+    margin-top: 1em;
+    }
+    
+.accent-color-title-center::after {
+    content: '';
+    display: block;
+    width: 68%;
+    height: 15px;
+    background: rgba(30, 144, 255, .3);
+    margin-top: -16px;
+    margin-left: 65px;
+}
+    
+.component-lead-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.20rem;
+    font-weight: 400;
     }
 
 .card-title {
-    font-size: 1.35rem;
+    font-size: 1.50rem;
     font-weight: 300;
+    color: #000000;
+    }
+    
+h3.card-title {
+    font-size: 1.15rem;
+    font-family: 'Lato', sans-serif;
+    color: #707070;
     }
 
-.card-text-description {
-    font-size: 1rem;
+.card-subtitle {
+    font-size: 1.15rem;
+    font-weight: 400;
     }
+
+/* ============
+resume
+============ */
+
+.resume-card {
+    margin-bottom: 2em;
+    }
+
+.resume-component .card-component-img {
+    width: 200px;
+    display: block;
+    margin: 0 auto 2em;
+    }
+    
+/* ============
+skills
+============ */
+
+.skills-card {
+    margin-bottom: 2em;
+    }
+
+.skills-component .card-component-img {
+    max-width: 128px;
+    width: 100%;
+    display: block;
+    margin: 0 auto 2em;
+    background-color: #ffffff;
+    }
+    
+/* ============
+about me
+============ */
+
+.aboutme-card-component-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+.aboutme-component .card-component-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    }
+    
+.aboutme-card .card-text-description {
+    padding: 1em;
+    text-align: left;
+    font-size: .75rem;
+    }
+    
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    }
+
+.widget-flex-item01,
+.widget-flex-item02  {
+    flex: 0 1 auto;
+    align-self: stretch;
+    }
+  
+ /*
+.aboutme-component-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "a" "b" "c" "d";
+    }
+
+.item1 {
+    grid-area: a;
+    }
+.item2 {
+    grid-area: b;
+    }
+.item3 {
+    grid-area: c;
+    }
+.item4 {
+    grid-area: d;
+    }
+*/
+
+
+/* ============
+media queries
+============ */
 
 
 @media (min-width: 600px) {
     
+.accent-color-title-center::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 20px;
+    background: rgba(30, 144, 255, .3);
+    margin-top: -20px;
+    margin-left: 15px;
+    }
+     
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
     grid-gap: 1em;
-    padding: 1em;
     }
 
 .portfolio-title {
     font-size: 2rem;
-    width: 350px;
-    border-bottom: 10px solid #dbdbdb;
     }
-
-.portfolio-card {
-    margin: 1em;
+    
+.component-lead-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 400;
     }
 
 .card-title {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-family: 'Lato', sans-serif;
+    }
+    
+.card-subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #707070;
+    margin-top: 0;
+    margin-bottom: -2em;
+    }
+    
+h3.card-title {
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    color: #707070;
     }
 
 .card-list-ul-copy {
     padding-top: 0;
+    }
+    
+.card-component-img {
+    border-radius: 3px;
+    background-color: #DBDBDB;
+    }
+    
+/* ============
+resume
+============ */
+
+.resume-component {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1em;
+    }
+
+.resume-component .card-component-img {
+    max-width: 200px;
+    width: 100%;
+    display: block;
+    margin: 0 auto 2em;
+    }
+    
+/* ============
+skills
+============ */
+
+.skills-component {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1em;
+    }
+    
+.skills-component .card-component-img {
+    max-width: 128px;
+    width: 100%;
+    display: block;
+    margin: 0 auto 2em;
+    background-color: #ffffff;
+    }
+    
+/* ============
+about me
+============ */
+
+/* layour for image and lead text on about me */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    }
+
+.widget-flex-item01 {
+    flex: 0 1 auto;
+    align-self: auto;
+    width: 33%;
+    margin-right: 2em;
+    }
+
+.widget-flex-item02 {
+    flex: 0 1 auto;
+    align-self: auto;
+    width: 66%;
+    }
+
+.aboutme-card-component-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    align-self: start;
+    }
+        
+.aboutme-card .card-text-description {
+    padding: 1em;
+    text-align: center;
+    font-size: 1.15rem;
     }
 }

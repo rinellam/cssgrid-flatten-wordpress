@@ -1,0 +1,986 @@
+/* > > > > > > > > > > > > > >
+START - SITE WIDE CHANGES
+< < < < < < < < < < < < < < */
+
+/* - - - - - - - - - - - - - -
+Change font family to Roboto
+- - - - - - - - - - - - - - */
+h1, h2, h4, h5, h6 {font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;}
+h3 {font-weight: 600; font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;}
+b, strong {font-weight: 700; font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;}
+p {font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;}
+.entry-content a, .entry-summary a, .comment-content a, .widget a, .site-footer .widget-area a, .posts-navigation a, .widget_authors a strong {font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;}
+
+
+/* - - - - - - - - - - - - - -
+Links styling
+- - - - - - - - - - - - - - */
+a:link {
+	color:  DodgerBlue;
+} /* unvisited link */
+
+a:visited {
+	color:  DodgerBlue;
+} /* visited link */
+.navigation-top .current_page_item > a { /* active link on main menu */
+  color: #000000;
+	box-shadow: none;
+	}
+.navigation-top a:hover, .navigation-top a:focus {
+	color: #000;
+	box-shadow: none;
+}
+/* - - - - - - - - - - - - - -
+Footer - remove hr, reduce padding, decrease text size, and remove white line from menu text
+- - - - - - - - - - - - - - */
+.site-footer .widget ul li, .widget ol li {
+    border-bottom: 0;
+    border-top: 0;
+    padding: 0.5em 0;
+	font-size: 0.85rem;
+	}
+.widget ul li a, .site-footer .widget-area ul li a, .site-footer .widget-area ul li a {
+    box-shadow: none;
+	}
+.site-info {display: none;} 
+/* remove FOOTER text */
+.site-footer { /* background color for FOOTER */
+    background-color: #CFCFCF;
+	}
+/* - - - - - - - - - - - - - -
+Modify width of page header div - text to full width
+- - - - - - - - - - - - - - */
+body.page-two-column:not(.archive) #primary .entry-header, body.page-two-column.archive:not(.has-sidebar) #primary .page-header {
+    width: 100%;
+	}
+/* - - - - - - - - - - - - - -
+All Pages - modify to full width
+- - - - - - - - - - - - - - */
+#primary .entry-content {
+  width: 100% !important;
+	}
+/* - - - - - - - - - - - - - -
+All Posts - modify to full width
+- - - - - - - - - - - - - - */
+#primary article {
+	width: 100% !important;
+	}
+/* - - - - - - - - - - - - - -
+Main Menu - Change color of down arrow on nav
+- - - - - - - - - - - - - - */
+.site-header .navigation-top .menu-scroll-down {
+    color: DodgerBlue;
+	}
+/* - - - - - - - - - - - - - -
+All H1 & H2 - change font and styling for entry text
+- - - - - - - - - - - - - - */
+h1.entry-title {
+font-family: 'Roboto', 'Arial', serif !important;
+	font-size: 3em !important;
+	text-transform: none !important;
+	letter-spacing: -0.5px!important;
+	line-height: 1em;
+	}
+h2.page-title {
+	font-family: 'Roboto', 'Arial', sans-serif !important;
+	font-size: 3em !important;
+	text-transform: none !important;
+	letter-spacing: 0px!important;
+	}
+/* - - - - - - - - - - - - - -
+Site Title michaelrinella.com - change font and styling
+- - - - - - - - - - - - - - */
+body.has-header-image .site-title, body.has-header-image .site-title a {
+    color: #fff;
+	font-family: 'Alfa Slab One', cursive;
+letter-spacing: 0.1rem;
+    font-size: 3rem;
+	text-transform: none;
+	font-weight: 400;
+	text-shadow: 0 0 0.35rem #333333;
+	}
+/* - - - - - - - - - - - - - -
+All Headers Tightens up the spacing between the entry header text and the main menu 
+- - - - - - - - - - - - - - */
+.site-content {
+    padding: 2.6em 0 0;
+	}
+/* - - - - - - - - - - - - - -
+All List Items - styling list item li tags site wide for bootstrap 
+- - - - - - - - - - - - - - */
+.col-md-4 li {
+	list-style-position: outside;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	}
+
+/* > > > > > > > > > > > > > >
+END - SITE WIDE CHANGES
+< < < < < < < < < < < < < < */
+
+/* > > > > > > > > > > > > > >
+START - KNOWLEDGE SECTION
+< < < < < < < < < < < < < < */
+.rinellaApplications .card-body {
+  background-color: #DAE0E3;
+	}
+.rinellaQuickHits .card {
+	margin-bottom: 2rem;
+	}
+.rinellaApplications .card-body li {
+	list-style-position: inside;
+	}
+.rinellaWhatIbring ul {
+	padding-left: 1rem;
+	}
+.rinellaWhatIbring {
+	margin-bottom: 2rem;
+	}
+/* > > > > > > > > > > > > > >
+END  - KNOWLEDGE SECTION
+< < < < < < < < < < < < < < */
+
+/* > > > > > > > > > > > > > >
+START - POSTS SECTION 
+< < < < < < < < < < < < < < */
+/* - - - - - - - - - - - - - -
+ Size and format thumbnail image on Posts
+- - - - - - - - - - - - - - */
+.post-thumbnail a img {
+	width: 25%;
+	float: left;
+	margin-right: 2rem;
+	/*border-radius: 50%;*/
+	}
+/* > > > > > > > > > > > > > >
+END - POSTS SECTION 
+< < < < < < < < < < < < < < */
+
+/* > > > > > > > > > > > > > >
+START - CURRICULUM VITAE SECTION 
+< < < < < < < < < < < < < < */
+/* - - - - - - - - - - - - - -
+Align margin  for ul and li
+- - - - - - - - - - - - - -  */
+.rinellaResume ul {
+	margin-left: 0.55rem;
+	}
+.rinellaResume .card-title, .card-subtitle {
+	margin-left: -0.35rem;
+	}
+
+
+/* > > > > > > > > > > > > > >
+END - CURRICULUM VITAE SECTION 
+< < < < < < < < < < < < < < */
+
+/* > > > > > > > > > > > > > >
+START - ABOUT ME SECTION 
+< < < < < < < < < < < < < < */
+/* - - - - - - - - - - - - - - 
+START - Parallax for About Me
+- - - - - - - - -- - - - - - */
+.bgimg-1 {
+  	background-image: url("/wp-content/uploads/2019/03/baseballImg02.800w.png");
+  	min-height: 400px;
+	}
+.bgimg-2 {
+  	background-image: url("/wp-content/uploads/2019/03/guitarImg04.800w.jpeg");
+  	min-height: 400px;
+	}
+.bgimg-3 {
+  	background-image: url("/wp-content/uploads/2019/03/carImg01.800w.png");
+  	min-height: 400px;
+	}
+.bgimg-4 {
+  	background-image: url("/wp-content/uploads/2019/03/CSMCBldgMoses.800w.jpg");
+  	min-height: 400px;
+	}
+.bgimg-5 {
+  	background-image: url("/wp-content/uploads/2019/03/bikegearImg.800w.png");
+  	min-height: 400px;
+	}
+.paraBox {
+	color:#FFFFFF;
+	background-color:#000000;
+	text-align:center;
+	padding-top:20px;
+	padding-bottom:5px;
+	margin-bottom: 30px;
+	}
+
+
+/* - - - - - - - - - - - - - - 
+END - Parallax for About Me
+- - - - - - - - -- - - - - - */
+
+/* - - - - - - - - - - - - - - 
+START - edits to WP-Forms
+- - - - - - - - - - - - - - */
+/* rinella > change button color for contact form */
+.wpforms-form input[type="submit"], div.wpforms-container-full .wpforms-form button[type="submit"], div.wpforms-container-full .wpforms-form .wpforms-page-button {
+	background-color: dodgerblue;
+	border: 1px solid dodgerblue;
+	color: white;
+	font-size: 1em;
+	padding: 10px 15px;
+	}
+.wpforms-form input[type="submit"], div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
+	background-color: dodgerblue;
+	border: 1px solid dodgerblue;
+	cursor: pointer;
+	color: black;
+	}
+.wpforms-confirmation-container-full {
+    color: white;
+    margin: 0 0 24px 0;
+    background: dodgerblue;
+    border: dodgerblue;
+    padding: 15px 15px;
+	}
+#formRinella {
+	border: 1px solid #ccc!important;
+	padding: 2rem; 
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+	}
+/* - - - - - - - - - - - - - - 
+END - edits to WP-Forms
+- - - - - - - - - - - - - - */
+/* > > > > > > > > > > > > > >
+END - ABOUT ME SECTION 
+< < < < < < < < < < < < < < */
+
+/* > > > > > > > > > > > > > >
+START - PORTFOLIO SECTION 
+< < < < < < < < < < < < < < */
+/* - - - - - - - - - - - - - - 
+START - edits to Portfolio for hovers and styling
+- - - - - - - - - - - - - - */
+.h3Portfolio h3 {
+	font-size: 1.5rem;
+	}
+.portBody {
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	font-size: 1rem;	
+	margin-top: 2rem;
+	}
+.containerPortfolio {
+    position:relative;
+    width:100%;
+    height:auto;
+    display:inline-block;
+	}
+.overLay {
+    position:absolute;
+    width:100%;
+    height: auto;
+    transition:all 0.5s ease;
+    opacity:0;
+    background-color: dodgerblue;
+	}
+.containerPortfolio:hover .overLay {
+    opacity:.92;
+	}
+.textPortfolio {
+    color:white;
+    position:absolute;
+    width: 50%;
+    top:55%;
+    left:50%;
+  	transform:translate(-50%,-50%);
+	}
+.textPortfolio li {
+	font-size: 14px;
+	}
+.textPortfolio ul {
+	list-style-position: inside;
+	}
+p.textPortheading {
+	font-size: 1rem;
+	text-transform: uppercase;
+	line-height: 0rem;
+	}
+.overLayTop {
+    width:100%;
+    height:0;
+    top:0;
+    background: dodgerblue;
+	}
+.overLayBottom {
+    width:100%;
+    height:0;
+    bottom:0;
+    background: #222222;
+	}
+.containerPortfolio:hover .overLayTop, .containerPortfolio:hover .overLayBottom {
+    height:100%;
+	}
+
+
+/* rinella > turn off hover shadow and change bkg color to dodgerblue, text color white */
+.btn.btn-outline-primary:hover {
+	text-decoration: none;	
+	box-shadow:none;
+	background-color: dodgerblue;
+	color: white;
+	}
+
+
+/* - - - - - - - - - - - - - - 
+END - edits to Portfolio for hovers and styling
+- - - - - - - - - - - - - - */
+/* > > > > > > > > > > > > > >
+END - PORTFOLIO SECTION 
+< < < < < < < < < < < < < < */
+
+/* > > > > > > > > > > > > > >
+START - MEDIA QUERIES 
+< < < < < < < < < < < < < < */
+
+
+/* - - 801 px and Up - - */
+@media screen and (min-width: 801px){
+/* - - - - - - - - - - - - - - 
+Portfolio - Hide the Mobile friendly class for the My Requirements text for Tablet and up
+- - - - - - - - - - - - - - */
+#textPortfolio-mobileOnly {
+	display: none;
+	}
+ul.mobileOnly {
+	 display: none;
+	}
+/* - - - - - - - - - - - - - -
+ Modify header size on all pages EXCLUDE HOME PAGE to reduce image viewport height, and add padding to site title text
+- - - - - - - - - - - - - - */
+.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media {
+	height: 25vh;
+	}
+.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header {
+	margin-bottom: 25px!important;
+	}
+.has-header-image:not(.twentyseventeen-front-page):not(.home) .site-title, .has-header-image:not(.twentyseventeen-front-page):not(.home) .site-title a {
+	padding-bottom: 10px;
+	}
+}
+
+/* - - - - 800 px - - - - */
+
+/* - - - - - - - - - - - - -
+Mobile Menu no display at 800px, dislay at 767px, align left, uppercase
+- - - - - - - - - - - - - */
+@media screen and (max-width: 800px) {
+.js .menu-toggle {
+    display: none;
+	}
+
+
+/* - - - - - - - - - - - - -
+Knowledge - set card body height for Tablet and iPad 
+- - - - - - - - - - - - - */
+.rinellaApplications .card-body {
+	height: 200px; 
+	}
+
+/* - - - - - - - - - - - - - 
+Knowledge - reduce font size and set li styling for Tablet and iPad 
+
+- - - - - - - - - - - - - */
+.rinellaApplications .card-body li {
+	font-size: 0.85rem; 
+	list-style-position: outside;
+	margin-left: 0.8rem;
+	}
+
+/* - - - - - - - - - - - - - - 
+Parallax Tablet - turn off parallax scrolling for tablets and phones and set styling 
+- - - - - - - - - - - - - - */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    background-attachment: scroll;
+	background-size: cover;
+	min-height: 550px;
+  	}
+.paraBox {
+	margin-top: -20px;
+	margin-bottom: 20px;
+	}
+
+
+
+/* - - - - - - - - - - - - - -
+Portfolio - Turn off image hover for iPad and Tablet 
+- - - - - - - - - - - - - - */
+.containerPortfolio:hover .overLayTop, .overLayBottom {
+    display: none;
+	}
+
+
+/* - - - - - - - - - - - - - -
+Portfolio - My Requirements indent li bullets for Tablet and iPad
+- - - - - - - - - - - - - - */
+ul.mobileOnly {
+	 list-style-position: inside;
+	}
+}
+
+
+/* - - - - 770px-800px - - - */
+/* - - - - - - - - - - - - - -
+ Modify header size on all pages EXCLUDE HOME PAGE to reduce image viewport height, and add padding to site title text
+- - - - - - - - - - - - - - */
+@media only screen and (min-device-width: 770px) and (max-device-width: 800px) {
+.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media {
+	height: 9vh;
+	}
+.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header {
+	margin-bottom: 20px!important;
+	}
+.has-header-image:not(.twentyseventeen-front-page):not(.home) .site-title, .has-header-image:not(.twentyseventeen-front-page):not(.home) .site-title a {
+	padding-bottom: 30px;
+	}
+}
+
+/* - - - - 768px-769px - - - */
+/* - - - - - - - - - - - - - -
+ Modify header size on all pages EXCLUDE HOME PAGE to reduce image viewport height, and add padding to site title text
+- - - - - - - - - - - - - - */
+@media only screen and (min-device-width: 768px) and (max-device-width: 769px) {
+.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media {
+	height: 12vh;
+	}
+.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header {
+	margin-bottom: 20px!important;
+	}
+.has-header-image:not(.twentyseventeen-front-page):not(.home) .site-title, .has-header-image:not(.twentyseventeen-front-page):not(.home) .site-title a {
+	padding-bottom: 30px;
+	}
+}
+
+
+/* - - - - 768 px - - - - */
+@media screen and (max-width: 768px) {
+/* - - - - - - - - - - - - - - 
+Parallax iPad - turn off parallax scrolling for tablets and phones and set styling 
+- - - - - - - - - - - - - - */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    background-attachment: scroll;
+	background-size: cover;
+	min-height: 500px;
+	margin-top: 10px;
+  	}
+.paraBox {
+	margin-top: -10px;
+	margin-bottom: 30px;
+	}
+}
+
+
+/* - - - - 767 px - - - - */
+
+/* - - - - - - - - - - - - -
+Mobile Menu dislay at 767px, align left, text is uppercase
+- - - - - - - - - - - - - */
+@media screen and (max-width: 767px) {
+.js .menu-toggle {
+  	display: block;
+	margin-left: 14px;
+	text-transform: uppercase;
+	}
+}
+
+/* - - - - 600 px - - - - */
+
+/* - - - - - - - - - - - - -
+Main text styling for Site Title - michaelrinella.com
+- - - - - - - - - - - - - */
+@media screen and (max-width: 600px) {
+body.has-header-image .site-title, body.has-header-image .site-title a {
+	font-size: 2.6rem;
+	}
+}
+
+/* - - - - 500 px - - - - */
+
+/* - - - - - - - - - - - - -
+Main text styling for Site Title - michaelrinella.com 
+- - - - - - - - - - - - - */
+@media screen and (max-width: 500px) {
+body.has-header-image .site-title, body.has-header-image .site-title a {
+	font-size: 2.4rem;
+	}
+}
+
+/* - - - - 450 px - - - - */
+	
+/* - - - - - - - - - - - - -
+Main text styling for Site Title - michaelrinella.com 
+- - - - - - - - - - - - - */
+@media screen and (max-width: 450px) {
+body.has-header-image .site-title, body.has-header-image .site-title a {
+	font-size: 2.2rem;
+	}
+}
+
+/* - - - - 414 px - - - - */
+
+@media screen and (max-width: 414px) {
+/* - - - - - - - - - - - - - -
+Mobile - resize header image for 
+- - - - - - - - - - - - - - */
+.has-header-image.home.blog .custom-header {
+    height: 25vh;
+	/*object-fit: cover;*/
+	}
+
+/* - - - - - - - - - - - - - -
+Mobile menu change font and text to uppercase
+- - - - - - - - - - - - - - */
+button.menu-toggle {
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	text-transform: uppercase;
+	}
+/* - - - - - - - - - - - - -
+Mobile - resize main text styling for Site Title
+- - - - - - - - - - - - - */
+body.has-header-image .site-title, body.has-header-image .site-title a {
+    font-size: 1.4rem;
+	}
+/* - - - - - - - - - - - - - -
+Mobile - remove padding under page header and margin above header text 
+- - - - - - - - - - - - - - */
+.page-header {
+	margin-top: -1em;
+    padding-bottom: 0;
+	}
+/* - - - - - - - - - - - - - - 
+Mobile - enlarge footer text 
+- - - - - - - - - - - - - - */
+.site-footer .widget ul li, .widget ol li {
+	font-size: 0.9rem;
+	}
+/* - - - - - - - - - - - - - - 
+Knowledge - Mobile set card-body height back to 100%
+- - - - - - - - - - - - - - */
+.rinellaApplications .card-body { 
+	height: 100%; 
+	}
+/* - - - - - - - - - - - - - -
+Posts - Mobile size and format thumbnail image on Posts 
+- - - - - - - - - - - - - - */
+.post-thumbnail a img {
+	width: 100%;	
+	margin-bottom: 2rem;
+	}
+/* - - - - - - - - - - - - - -
+Curriculum Vitae - Mobile reduce entrhy h1 to wrap correctly for mobile Curriculm Vitae
+- - - - - - - - - - - - - -  */
+#post-3670 h1.entry-title {
+  font-size: 2.6em!important;
+	}
+/* - - - - - - - - - - - - - - 
+Parallax Mobile - turn off parallax scrolling for tablets and phones and set styling 
+- - - - - - - - - - - - - - */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    background-attachment: scroll;
+	background-size: cover;
+	min-height: 350px;
+	margin-top: 0px;
+	}
+.paraBox {
+	margin-top: -70px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 20px;
+	}
+	
+
+
+/* - - - - - - - - - - - - - -
+Portfolio - Mobile turn off image hover at 414
+- - - - - - - - - - - - - - */
+.containerPortfolio:hover .overLayTop, .overLayBottom {
+    display: none;
+	}
+	
+
+
+/* - - - - - - - - - - - - - -
+Portfolio - Mobile text size and width of li at 414
+- - - - - - - - - - - - - - */
+.textPortfolio li {
+	font-size: 12px;
+	width: 100%;
+	}	
+
+
+/* - - - - - - - - - - - - - -
+Portfolio - Mobile size and width of text div at 414
+- - - - - - - - - - - - - - */
+.textPortfolio {
+    top:57%;
+	width: 55%;
+	}
+
+
+
+/* - - - - - - - - - - - - - -
+Portfolio - Mobile text size for H3 at 414
+- - - - - - - - - - - - - - */
+.h3Portfolio h3 {
+    font-size: 1.3rem;
+	}
+/* - - - - - - - - - - - - - -
+Portfolio - Mobile text size for p text with mobile friendly My Requirements at 414
+- - - - - - - - - - - - - - */
+#textPortfolio-mobileOnly p.textPortheading {
+    font-size: 1rem;
+	margin-top: 1.8rem
+	}
+
+
+/* - - - - - - - - - - - - - -
+Portfolio - Mobile text size for li text with mobile friendly My Requirements at 414
+- - - - - - - - - - - - - - */
+#textPortfolio-mobileOnly li {
+    font-size: 0.8rem;
+	}
+
+
+/* - - - - - - - - - - - - - -
+Portfolio - Mobile margin size/indent for ul text with mobile friendly My Requirements at 414 *** this brakes the layout when removed
+- - - - - - - - - - - - - - */
+ul.mobileOnly {
+	margin-left: 14px;
+	}
+}
+
+/* - - - - 375 px - - - - */
+@media screen and (max-width: 375px) {
+/* - - - - - - - - - - - - - -
+Curriculum Vitae - Mobile reduce entry h1 to wrap correctly for mobile Curriculm Vitae
+- - - - - - - - - - - - - - */
+#post-3670 h1.entry-title {
+  font-size: 2.4em!important;
+	}
+/* - - - - - - - - - - - - - - 
+Parallax Mobile - turn off parallax scrolling for tablets and phones and set styling 
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    background-attachment: scroll;
+	background-size: cover;
+	min-height: 350px;
+	margin-top: 0px;
+	}
+.paraBox {
+	margin-top: -90px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 20px;
+	}
+
+10-1-2019
+- - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - -
+Portfolio - Mobile turn off image hover at 375
+
+.containerPortfolio:hover .overLayTop, .overLayBottom {
+    display: none;
+	}
+
+10-1-2019
+- - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - -
+Portfolio - Mobile size and width of text div at 375
+
+.textPortfolio {
+    top:58%;
+	width: 55%;
+	}
+
+10-1-2019
+- - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - -
+Portfolio - Mobile text size and width of li at 375
+
+.textPortfolio li {
+	font-size: 11px;
+	width: 100%;
+	}
+
+10-1-2019
+- - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - -
+Portfolio - Mobile text size and width of p at 375
+
+p.textPortheading {
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	line-height: 0rem;
+}
+
+10-1-2019
+- - - - - - - - - - - - - - */
+	
+/* - - - - - - - - - - - - - -
+Portfolio - Mobile text size for H3 at 375
+- - - - - - - - - - - - - - */
+.h3Portfolio h3 {
+    font-size: 1.3rem;
+	}
+}
+
+/* - - - - 360 px - - - - */
+@media screen and (max-width: 360px) {
+/* - - - - - - - - - - - - -
+Mobile - Main text styling for Site Title for Galaxy S9
+- - - - - - - - - - - - - */
+body.has-header-image .site-title, body.has-header-image .site-title a {
+  	font-size: 1.2rem; 
+	}
+/* - - - - - - - - - - - - - -
+Portfolio - Mobile turn off image hover at 360
+
+.containerPortfolio:hover .overLayTop, .overLayBottom {
+    display: none;
+	}
+
+10-1-2019
+- - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - -
+Portfolio - Mobile size and width of text div at 360
+
+.textPortfolio {
+    top:58%;
+	}
+
+10-1-2019
+- - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - -
+Portfolio - Mobile text size and width of li at 360
+
+.textPortfolio li {
+	font-size: 10px;
+	width: 100%;
+	}	
+
+10-1-2019
+- - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - -
+Portfolio - Mobile text size and width of p at 360
+
+p.textPortheading {
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	line-height: 0rem;
+	}
+
+10-1-2019
+- - - - - - - - - - - - - - */	
+
+/* - - - - - - - - - - - - - -
+Portfolio - Mobile text size for H3 at 360
+- - - - - - - - - - - - - - */
+.h3Portfolio h3 {
+    font-size: 1.2rem;
+	}
+}
+/* > > > > > > > > > > > > > >
+END - MEDIA QUERIES 
+< < < < < < < < < < < < < < */
+
+
+/* - - - - - - - - - - - - - -
+Site wide - Fixed cover header image to display and show all of image in iPad and mobile view
+- - - - - - - - - - - - - - */
+.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media {
+    height: 20vh;
+}
+
+
+@media screen and (max-width: 800px) {
+.has-header-image .custom-header-media img, 
+.custom-header-media img {
+height: auto;
+left: 0;
+max-width: 100%;
+min-height: 0;
+-o-object-fit: unset;
+object-fit: unset;
+position: relative;
+-ms-transform: none;
+-moz-transform: none;
+-webkit-transform: none;
+transform: none;
+	}
+.home.blog.has-header-image .custom-header-media {
+height: 40vh;
+	}
+	
+svg.icon.icon-arrow-right {
+display: none;
+}}
+@media screen and (max-width: 768px) {
+.has-header-image .custom-header-media img, 
+.custom-header-media img {
+height: auto;
+left: 0;
+max-width: 100%;
+min-height: 0;
+-o-object-fit: unset;
+object-fit: unset;
+position: relative;
+-ms-transform: none;
+-moz-transform: none;
+-webkit-transform: none;
+transform: none;
+	}
+.home.blog.has-header-image .custom-header-media {
+height: 40vh;
+	}}
+
+@media screen and (max-width: 414px) {
+.has-header-image .custom-header-media img,
+.custom-header-media img {
+height: auto;
+left: 0;
+max-width: 100%;
+min-height: 0;
+-o-object-fit: unset;
+object-fit: unset;
+position: relative;
+-ms-transform: none;
+-moz-transform: none;
+-webkit-transform: none;
+transform: none;
+	}
+}
+
+@media screen and (max-width: 800px) {
+.has-header-image.home.blog .custom-header {
+Height: 25vh;
+}
+	.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media {
+    height: 12vh;
+}
+body.has-header-image .site-title {
+margin-bottom: -20px;
+}
+}
+
+@media screen and (max-width: 768px) {
+.has-header-image.home.blog .custom-header {
+Height: 25vh;
+}
+	.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media {
+    height: 12vh;
+}
+body.has-header-image .site-title {
+margin-bottom: -20px;
+}
+}
+
+@media screen and (max-width: 414px) {
+.home.blog.has-header-image .custom-header-media, .home.blog.has-header-video .custom-header-media {
+    height: auto;
+
+	}
+	.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media {
+    height: 8vh;
+}
+body.has-header-image .site-title {
+margin-bottom: auto;
+}
+	
+.aboutmeheaderImg {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-bottom: 1.5em;
+	}
+}
+
+
+@media screen and (max-width: 375px) {
+.home.blog.has-header-image .custom-header-media, .home.blog.has-header-video .custom-header-media {
+    height: auto;
+}
+	.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media {
+    height: 9vh;
+}
+}
+
+button:hover:not(.mejs-container > button), button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+background: #FFFFFF;
+}
+	
+
+
+/* changes to portofolio 
+.rinellaWorkSamples .card {
+	border: none;
+}
+h4.rinellaPortfolio {
+display: none;
+}
+.rinellaWorkSamples .btn-group {
+display: none;
+}
+10-1-2019
+*/
+	
+/* remove underline from h3 on portfolio pages for a links */
+.h3Portfolio a {
+	box-shadow: none;
+}
+
+
+.current-project-title {
+	font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+	font-size: 1.75rem;
+	font-weight: 400;
+	opacity: .6;
+	margin: .75em .75em;
+	text-transform: uppercase;
+}
+
+.current-project-title strong {
+	font-weight: 700;
+}
+
+@media screen and (max-width: 414px) {
+	/* smaller text for mobile 09.27.2019 */
+.current-project-title {
+    font-size: 1.15rem;
+
+	}
+}
+
+@media screen and (max-width: 375px) {
+	/* smaller text for mobile 09.27.2019 */
+.current-project-title {
+    font-size: 1.15rem;
+
+	}
+}
+
+/* sketch and github icons for portfolio and post pages */
+.fa-link {
+font-size: 2rem;
+text-decoration: none;
+}
+
+/* remove padding and margin - 09-30-2019 */
+#wp-block-themeisle-blocks-advanced-columns-7395e0a3,
+#wp-block-themeisle-blocks-advanced-column-b25c52b4,
+.wp-block-themeisle-blocks-advanced-columns.has-default-gap .wp-block-themeisle-blocks-advanced-column {
+padding: 0;
+margin: 0;
+}
+
+
+
+
